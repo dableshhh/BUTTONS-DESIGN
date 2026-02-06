@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <div class="fullimg" id="fulimgbox">
+        <img src="./images/humidity.svg" id="fulimg">
+        <span onclick="closeFullimg()">X</span>
+    </div>
+    <div class="imggallery">
+        <img src="./images/passward.svg" onclick="openfullimg(this.src)">
+        <img src="./images/arrow-down-01.svg" onclick="openfullimg(this.src)">
+        <img src="./images/passward.svg" onclick="openfullimg(this.src)">
+        <img src="./images/humidity.svg" onclick="openfullimg(this.src)">
+        <img src="./images/passward.svg" onclick="openfullimg(this.src)">
+    </div>
+
+
+
+    <script>
+var fulimgbox=document.getElementById("fulimgbox");
+
+var fulimg=document.getElementById("fulimg")
+
+function openfullimg(pic){
+    fulimgbox.style.display="flex"
+    fulimg.src=pic;
+}
+function closeFullimg(){
+    fulimgbox.style.display="none"
+}
+    </script>
+
+</body>
+
+</html>
